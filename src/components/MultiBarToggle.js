@@ -125,7 +125,7 @@ class MultiBarToggle extends Component {
                             height: actionSize,
                             borderRadius: actionSize / 2,
                             backgroundColor: route.color,
-                        }]}
+                        },route.style]}
                         onPress={() => this.actionPressed(route)}
                     >
                         {route.icon}
@@ -238,7 +238,8 @@ const Styles = {
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+      marginBottom: 7,
     },
     toggleButton: {
         top: 15,
